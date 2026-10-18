@@ -1,4 +1,4 @@
-# NIN SPOT GUIDE v4.0
+# NIN SPOT GUIDE v0.4.1
 
 GitHub Pages: upload `index.html`, `showcases.js`, and `nin-logo-white.png` to the same folder.
 
