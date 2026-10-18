@@ -55,7 +55,7 @@ window.NIN_SHOWCASES = [
     ]
   },
   {
-    videoUrl: '', // Add the Gwanghwamun BTS YouTube URL here.
+    videoUrl: 'https://youtube.com/shorts/VkntITHfdKc',
     title: 'BTS Returns to Gwanghwamun',
     description: 'BTS and ARMY letter objects appear across Gwanghwamun Square in a celebration-inspired AR scene.',
     tags: ['3D Object', 'AR'],
