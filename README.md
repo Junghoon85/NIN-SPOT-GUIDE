@@ -1,4 +1,4 @@
-# NIN SPOT GUIDE v0.4.2
+# NIN SPOT GUIDE v0.0.0
 
 GitHub Pages: upload `index.html`, `showcases.js`, and `nin-logo-white.png` to the same folder.
 
@@ -14,3 +14,8 @@ Location names link to the URL you supply. Each object renders as an individuall
 
 YouTube preview images and embeds require internet. Official social icons use jsDelivr Simple Icons.
 \nCatalog-style smooth horizontal card transitions.\n
+Compact 2:3 catalog cards; improved reverse-side spacing and separators.
+
+v0.0.0: smooth catalog slide, flip stagger, animated buttons, recipe entrance, reduced-motion support.
+
+Final catalog: 2:3 cards, centered focus, blurred adjacent previews, infinite smooth transitions, dot controls, clickable object chips, Guide Information, six official links, compact footer contacts.
