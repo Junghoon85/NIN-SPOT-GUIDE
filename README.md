@@ -1,9 +1,15 @@
-NIN SPOT GUIDE v0.3 revised
+# NIN SPOT GUIDE v4.0
 
-Upload index.html, showcases.js, and nin-logo-white.png to the same GitHub Pages directory.
+GitHub Pages: upload `index.html`, `showcases.js`, and `nin-logo-white.png` to the same folder.
 
-Edit showcases.js to add/remove video cards. Card front shows video, title, creator. On mobile card height scales to the viewport.
+## Content editing
 
-NIN logo was converted from the supplied image to transparent white. Footer icons are embedded SVGs (no external dependency).
+Edit `showcases.js` only. Each Showcase includes videoUrl, title, description, tags, creator, `location: {name, url}`, up to two `objects: [{name, url}]`, and `steps`.
 
-BTS video URL and unknown metadata remain blank.
+Each Recipe step accepts `title`, `description`, `settings: {key: value}`, and `guideKey` (lookup in `NIN_BASIC_GUIDES`) or `guideUrl` (step-specific override). `guideTitle` controls the guide link label. Steps are shown in order with settings and the corresponding Basic Guide **immediately below that step**.
+
+Fill real specifications from the actual production settings. Blank setting values are hidden; the sample files intentionally do not invent object speed, scale, altitude, or other measurements. Blank URLs do not create dead links.
+
+Location names link to the URL you supply. Each object renders as an individually linked hashtag when its URL is supplied. Maximum 2 objects per Showcase.
+
+YouTube preview images and embeds require internet. Official social icons use jsDelivr Simple Icons.
