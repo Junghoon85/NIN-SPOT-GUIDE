@@ -113,8 +113,89 @@ a.object-tag:hover{background:#ffffff30;border-color:white}
 .back .desc{margin-bottom:10px}
 @media(max-width:680px){.stage{--card-shift:clamp(135px,48vw,220px);--card-far:clamp(280px,96vw,460px)}.card{height:min(72dvh,540px);max-width:calc(100vw - 94px)}.back .facts{margin-top:10px;padding-top:16px}}
 @media(prefers-reduced-motion:reduce){.card{transition-duration:.01ms!important}}
+
+.brand{font-size:clamp(20px,3.1vw,30px);font-weight:800;letter-spacing:.025em;line-height:1.1}
+.top{min-height:64px;height:64px}
+.back{gap:clamp(10px,1.7vh,17px)}
+.back .desc{margin-bottom:5px;line-height:1.65}
+.back .tags{margin-bottom:5px}
+.back .facts{margin-top:5px;padding-top:16px;gap:12px}
+.back .fact{align-items:start}
+.back .object-tag{display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:480px){.brand{font-size:20px}.top{padding:0 14px}.spot{font-size:10px;padding:7px 10px}}
+@media(max-height:600px){.top{height:52px;min-height:52px}.brand{font-size:18px}.back{gap:7px}.back .facts{gap:5px;padding-top:8px}}
+.guide-pending{opacity:.6;cursor:default;text-decoration:none}.recipe-head:before{content:"RECIPE";display:block;letter-spacing:.16em;color:#9bd2c6;font-size:11px;margin-bottom:10px}.specs-label{letter-spacing:.1em}
+
+/* v0.0.1 · brighter editorial hierarchy */
+.brand{font-size:clamp(24px,3.5vw,34px);font-weight:850;letter-spacing:.01em;color:#fff}
+.top{height:72px;min-height:72px;border-bottom-color:#ffffff1a}
+.card.pos-center .face,.card.active .face{border-color:#57c7b7;box-shadow:0 0 0 1px #57c7b744,0 28px 85px #000c,0 0 44px #57c7b71f}
+.card.pos-left .face,.card.pos-right .face{border-color:#ffffff1f}
+.front{background:linear-gradient(160deg,#141b1c,#080b0c)}
+.front:after{content:'';position:absolute;inset:10px;border:1px solid #ffffff12;border-radius:10px;pointer-events:none}
+.front-info{padding:34px 22px 22px}.front-info h2{font-size:clamp(20px,3.1vh,28px);color:#fff}.front-info p{font-size:13px;color:#eef4f2}
+.front-meta{margin-top:10px!important;color:#d6dfdc!important;font-size:11px!important}
+.back{background:linear-gradient(155deg,#171d1e,#0b1011 72%);color:#fff}
+.back .desc{color:#f3f5f4}
+.tag{color:#bff8ee;border-color:#57c7b799;background:#123431}
+.fact-label{color:#c8cecc}.fact-value,.fact-value a{color:#fff}
+.object-tag{background:#ffffff0c;border-color:#ffffff4d;color:#fff}
+.recipe{background:#38a99a;color:#fff;border-color:#70d4c6}.recipe:hover{background:#47b8a9}.recipe strong{color:#fff}
+.flip{background:#17665ed9;border-color:#75d2c5}.flip:hover{background:#218075}
+.nav{color:#fff;border-color:#ffffff3b;background:#111718e8}.nav:hover{border-color:#fff}
+.dot{background:#ffffff42}.dot.on{background:#fff}
+.section h2{color:#fff}.guide-info{border-color:#ffffff24;background:#101415}.guide-steps strong{color:#fff}.guide-steps p{color:#cbd2d0}
+.socials{margin-inline:auto}.social .si{background:#fff}.social:hover,.social:focus-visible{background:#ffffff0d;outline-color:#ffffff45}
+.contact-inline a,.foot{color:#cfd5d3}.contact-inline a:hover,.contact-inline a:focus-visible{color:#fff}
+.back h2{font-size:clamp(23px,3.4vh,30px)}
+.back .desc{font-size:clamp(13px,2vh,15px);line-height:1.6}
+.back .fact{font-size:12px;line-height:1.55;grid-template-columns:68px minmax(0,1fr)}
+.back .fact-label{font-size:11px}.back .fact-value{font-size:12px}
+.back .tags{gap:7px}.back .tag{font-size:11px;padding:5px 10px}
+.objects-block{display:grid;grid-template-columns:68px minmax(0,1fr);gap:7px;align-items:start;margin-top:1px}
+.objects-label{font-size:11px;line-height:1.55;color:#c8cecc}
+.object-tags{display:flex;flex-wrap:wrap;gap:7px}
+.object-tags .object-tag{font-size:11px;padding:6px 10px;background:#123f3a;border-color:#57c7b7a8;color:#d9fff8}
+.guide-info{border-top:2px solid #3fae9f}.guide-steps strong{color:#9de3d8}
+.social-section{position:relative}.social-section:before{content:'';display:block;width:42px;height:2px;margin:0 auto 24px;background:#4eb9aa}
+.social .si{background:#eaf5f2}.social:hover .si,.social:focus-visible .si{background:#65cdbf}
+.nin-social-logo{filter:drop-shadow(0 0 8px #53bca955)}
+.contact-inline a{border-bottom:1px solid transparent}.contact-inline a:hover,.contact-inline a:focus-visible{border-bottom-color:#56c4b5;color:#bff8ee}
+.foot a{color:#dffbf5}.foot{border-top-color:#31534d}
+.nav{padding:0;line-height:0}.nav svg{display:block;width:19px;height:19px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.flip{width:36px;height:36px;right:14px;top:14px;background:#0b1718c7;border-color:#6bc9bb9c;opacity:.82;box-shadow:0 7px 20px #0007;transition:opacity .25s ease,background .25s ease,border-color .25s ease,transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease}
+.flip svg{width:21px;height:21px}.flip:hover,.flip:focus-visible{opacity:1;background:#17665e;border-color:#8de2d5;transform:rotate(180deg) scale(1.05);box-shadow:0 9px 26px #0009,0 0 18px #57c7b733}
+.back h2{padding-right:62px}
+@media(max-width:480px){.brand{font-size:23px}.top{height:62px;min-height:62px}.front-info h2{font-size:21px}}
+
+/* v0.0.2 · responsive media cards and calm text flip actions */
+.card{height:min(72dvh,600px);aspect-ratio:4/5;max-width:calc(100vw - 116px);cursor:pointer}
+.card.active:hover{transform:translate(-50%,-50%) scale(1.008);filter:none}
+.front{display:flex;flex-direction:column;background:#090d0e}
+.media{height:65%;flex:none;overflow:hidden;background:#050809}
+.thumb-backdrop{position:absolute;z-index:0;inset:-22px;width:calc(100% + 44px);height:calc(100% + 44px);object-fit:cover;filter:blur(22px) brightness(.3) saturate(.78);transform:scale(1.08)}
+.thumb{position:relative;z-index:1;object-fit:contain}
+.shade{display:none}
+.front-info{position:relative;inset:auto;flex:1;min-height:0;padding:22px 20px 60px;background:linear-gradient(150deg,#111718,#090d0e);pointer-events:auto;display:flex;flex-direction:column;justify-content:center;border-top:1px solid #ffffff14}
+.front-info h2{font-size:clamp(22px,3.2vh,30px);margin:0 0 8px;max-width:92%}
+.front-info p{font-size:13px;color:#cdd7d4}
+.front-meta{display:none!important}
+.flip{display:none}
+.flip-action{border:0;background:transparent;color:#71d4c6;font-size:11px;font-weight:800;letter-spacing:.13em;padding:8px 0;display:inline-flex;align-items:center;gap:8px;transition:color .2s ease,transform .25s ease}
+.flip-action span{display:inline-block;font-size:16px;transition:transform .25s ease}
+.front .flip-action{position:absolute;right:20px;bottom:17px}
+.back .flip-action{align-self:flex-start;margin:-4px 0 0}
+.front .flip-action:hover span,.front .flip-action:focus-visible span{transform:translateX(4px)}
+.back .flip-action:hover span,.back .flip-action:focus-visible span{transform:translateX(-4px)}
+.flip-action:hover,.flip-action:focus-visible{color:#bafff5;outline:none}
+.back h2{padding-right:0}
+.object-tags .object-tag{transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease;touch-action:manipulation}
+.object-tags .object-tag:hover,.object-tags .object-tag:focus-visible{background:#49b9aa;border-color:#92eee1;color:#07110f;transform:translateY(-2px);box-shadow:0 8px 18px #0007,0 0 0 2px #57c7b72e;outline:none}
+.object-tags .object-tag:active{background:#7ce0d3;transform:scale(.96)}
+@media(max-width:680px){.card{height:min(70dvh,560px);aspect-ratio:3/4;max-width:calc(100vw - 76px)}.media{height:63%}.front-info{padding:18px 16px 54px}.front .flip-action{right:16px;bottom:13px}}
+@media(prefers-reduced-motion:reduce){.card-inner{transition:opacity .12s ease}.card.flipped .card-inner{transform:rotateY(180deg)}.flip-action span,.object-tag{transition:none!important}}
 </style></head><body>
-<section class="hero" id="showcase"><header class="top"><div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg>NIN SPOT GUIDE</div><a class="spot" href="https://dns1.nin.earth/spot" target="_blank" rel="noopener noreferrer">NIN SPOT ↗</a></header><div class="stage"><button class="nav prev" id="prev" aria-label="Previous showcase">‹</button><div class="rail" id="rail"></div><button class="nav next" id="next" aria-label="Next showcase">›</button></div><div class="dots" id="dots"></div></section>
+<section class="hero" id="showcase"><header class="top"><div class="brand">NIN SPOT GUIDE</div><a class="spot" href="https://dns1.nin.earth/spot" target="_blank" rel="noopener noreferrer">NIN SPOT ↗</a></header><div class="stage"><button class="nav prev" id="prev" aria-label="Previous showcase"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><div class="rail" id="rail"></div><button class="nav next" id="next" aria-label="Next showcase"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><div class="dots" id="dots"></div></section>
 <main class="below"><section class="section" id="creation"><div id="recipePanel" class="recipe-panel" hidden></div></section><section class="section guide-info"><h2>GUIDE INFORMATION</h2><div class="guide-steps"><div><strong>01 · Watch</strong><p>See what’s possible with NIN Spot. Something catch your eye?</p></div><div><strong>02 · Discover</strong><p>Flip the card and uncover how it was made.</p></div><div><strong>03 · Create</strong><p>Dive into the Recipe, follow the steps, and bring your own ideas to life!</p></div></div></section><section class="section social-section"><nav class="socials" aria-label="NIN links"><a class="social" aria-label="NIN.Earth" title="NIN.Earth" href="https://nin.earth" target="_blank" rel="noopener noreferrer"><img class="nin-social-logo" src="nin-logo-white.png" alt=""></a><a class="social" aria-label="Blog" title="Blog" href="https://blog.nin.earth" target="_blank" rel="noopener noreferrer"><span class="si" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/blogger.svg')"></span></a><a class="social" aria-label="YouTube" title="YouTube" href="https://youtube.com/@ninearthofficial" target="_blank" rel="noopener noreferrer"><span class="si" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/youtube.svg')"></span></a><a class="social" aria-label="Instagram" title="Instagram" href="https://www.instagram.com/nin.earth/" target="_blank" rel="noopener noreferrer"><span class="si" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/instagram.svg')"></span></a><a class="social" aria-label="X" title="X" href="https://x.com/NINonEarth" target="_blank" rel="noopener noreferrer"><span class="si" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/x.svg')"></span></a><a class="social" aria-label="Discord" title="Discord" href="https://discord.gg/yJ9A9eWXwb" target="_blank" rel="noopener noreferrer"><span class="si" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/discord.svg')"></span></a></nav></section><footer class="foot"><a href="https://nin.earth" target="_blank" rel="noopener noreferrer"><img src="nin-logo-white.png" alt="NIN.Earth logo">NIN.EARTH</a><span>Copyright © NIN.Earth 2026 · v0.0.0</span></footer><section class="section contact-strip" aria-label="Contact NIN"><nav class="contact-inline" aria-label="Contact options"><a href="https://forms.gle/gxoa3QdksKE1wTq27" target="_blank" rel="noopener noreferrer">Support</a><a href="https://forms.gle/fuhuQxWpLtyS1Mju6" target="_blank" rel="noopener noreferrer">Business</a><a href="https://forms.gle/Fzx7zKqoG2b7Bk6f9" target="_blank" rel="noopener noreferrer">Careers</a></nav></section></main>
 <script src="showcases.js"></script><script>
 (()=>{'use strict';
@@ -122,19 +203,17 @@ const items=Array.isArray(window.NIN_SHOWCASES)?window.NIN_SHOWCASES:[],guides=w
 const E=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
 const safe=u=>{try{const x=new URL(u);return ['https:','http:'].includes(x.protocol)?x.href:''}catch{return''}};
 const videoId=u=>{try{const x=new URL(u);if(x.hostname==='youtu.be')return x.pathname.split('/')[1];if(x.hostname.endsWith('youtube.com'))return x.pathname.startsWith('/shorts/')?x.pathname.split('/')[2]:x.searchParams.get('v')||''}catch{}return''};
-const flipIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h9a3 3 0 0 1 3 3v4"/><path d="m16 8 3 3 3-3"/><rect x="5" y="8" width="11" height="13" rx="2"/><path d="M16 20h1a3 3 0 0 0 3-3v-2"/></svg>';
 function stopVideo(){rail.querySelectorAll('iframe').forEach(f=>{const p=f.parentNode;f.remove();const b=p.querySelector('.play');if(b)b.hidden=false})}
 function fact(box,label,value,url){if(!value)return;const row=E('div','fact'),l=E('span','fact-label',label),v=E('span','fact-value'),link=safe(url);if(link){const a=E('a','',value+' ↗');a.href=link;a.target='_blank';a.rel='noopener noreferrer';v.append(a)}else v.textContent=value;row.append(l,v);box.append(row)}
-function makeCard(item,i){const card=E('article','card'),inner=E('div','card-inner'),front=E('div','face front'),media=E('div','media'),id=videoId(item.videoUrl);
-if(id){const img=E('img','thumb');img.src='https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';img.alt='';img.loading=i===0?'eager':'lazy';media.append(img);const play=E('button','play','▶');play.type='button';play.setAttribute('aria-label','Play video');play.addEventListener('click',e=>{e.stopPropagation();stopVideo();const frame=E('iframe');frame.title=item.title;frame.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0';frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;play.hidden=true;media.append(frame)});media.append(play)}else media.append(E('span','','Video coming soon'));
-media.append(E('div','shade'));front.append(media);const cap=E('div','front-info');cap.append(E('h2','',item.title||'Untitled'),E('p','',item.creator||''));front.append(cap);
-const back=E('div','face back');back.append(E('h2','',item.title||'Untitled'),E('p','desc',item.description||''));const tags=E('div','tags');(item.tags||[]).forEach(t=>{tags.append(E('span','tag','#'+String(t).replace(/^#/,'').replace(/\s+/g,'')))});back.append(tags);
-const facts=E('div','facts');fact(facts,'Creator',item.creator);const loc=typeof item.location==='string'?{name:item.location,url:''}:item.location||{};fact(facts,'Location',loc.name,loc.url);
-const objs=(item.objects||[]).filter(o=>o&&o.name).slice(0,2);if(objs.length){const row=E('div','fact object-fact'),label=E('span','fact-label','Objects'),value=E('div','fact-value');objs.forEach(o=>{const u=safe(o.url),tag=E(u?'a':'span','object-tag','#'+String(o.name).replace(/^#/,'').replace(/\s+/g,'')+(u?' ↗':''));if(u){tag.href=u;tag.target='_blank';tag.rel='noopener noreferrer'}value.append(tag)});row.append(label,value);facts.append(row)}back.append(facts);
+function makeCard(item,i){const card=E('article','card'),inner=E('div','card-inner'),front=E('div','face front'),media=E('div','media'),id=videoId(item.videoUrl);card.dataset.aspect=item.aspect||'16:9';
+if(id){const src='https://i.ytimg.com/vi/'+id+'/hqdefault.jpg',blur=E('img','thumb-backdrop'),img=E('img','thumb');blur.src=src;blur.alt='';blur.loading=i===0?'eager':'lazy';img.src=src;img.alt='';img.loading=i===0?'eager':'lazy';media.append(blur,img);const play=E('button','play','▶');play.type='button';play.setAttribute('aria-label','Play video');play.addEventListener('click',e=>{e.stopPropagation();stopVideo();const frame=E('iframe');frame.title=item.title;frame.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0';frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;play.hidden=true;media.append(frame)});media.append(play)}else media.append(E('span','','Video coming soon'));
+media.append(E('div','shade'));front.append(media);const cap=E('div','front-info');cap.append(E('h2','',item.title||'Untitled'),E('p','',item.creator||''));const details=E('button','flip-action');details.type='button';details.innerHTML='DETAILS <span aria-hidden="true">→</span>';cap.append(details);front.append(cap);
+const back=E('div','face back');const title=item.link?E('a','',item.title||'Untitled'):E('h2','',item.title||'Untitled');if(item.link){title.href=safe(item.link);title.target='_blank';title.rel='noopener noreferrer';const wrap=E('h2');wrap.append(title);back.append(wrap)}else back.append(title);back.append(E('p','desc',item.description||''));const tags=E('div','tags');(item.tags||[]).forEach(t=>{tags.append(E('span','tag','#'+String(t).replace(/^#/,'').replace(/\s+/g,'')))});back.append(tags);
+const facts=E('div','facts');fact(facts,'Creator',item.creator||'To be added');const loc=typeof item.location==='string'?{name:item.location,url:''}:item.location||{};fact(facts,'Location',loc.name||'To be added',loc.url);back.append(facts);const objs=(item.objects||[]).filter(o=>o&&o.name).slice(0,2);if(objs.length){const block=E('div','objects-block'),objectTags=E('div','object-tags');block.append(E('span','objects-label','Objects'));objs.forEach(o=>{const u=safe(o.url),tag=E(u?'a':'span','object-tag','#'+String(o.name).replace(/^#/,'').replace(/\s+/g,'')+(u?' ↗':''));if(u){tag.href=u;tag.target='_blank';tag.rel='noopener noreferrer'}objectTags.append(tag)});block.append(objectTags);back.append(block)}
 const r=E('button','recipe');r.innerHTML='<strong>Recipe <span>→</span></strong>';r.addEventListener('click',e=>{e.stopPropagation();showRecipe(item)});back.append(r);
-[front,back].forEach((face,j)=>{const b=E('button','flip');b.type='button';b.innerHTML=flipIcon;b.setAttribute('aria-label',j?'Flip to front':'Flip to back');b.addEventListener('click',e=>{e.stopPropagation();stopVideo();card.classList.toggle('flipped')});face.append(b)});inner.append(front,back);card.append(inner);return card}
-function showRecipe(item){panel.replaceChildren();const close=E('button','recipe-close','×');close.setAttribute('aria-label','Close recipe');close.addEventListener('click',()=>{panel.hidden=true;document.getElementById('showcase').scrollIntoView({behavior:'smooth'})});panel.append(close);const head=E('div','recipe-head');head.append(E('h3','',item.title||'Recipe'),E('p','recipe-intro','Steps, settings, and guides used in this creation.'));panel.append(head);
-(item.steps||[]).forEach((s,i)=>{const step=E('section','step');step.style.setProperty('--step-index',i);step.append(E('h4','step-title',String(i+1).padStart(2,'0')+'. '+(s.title||'Step')));if(s.description)step.append(E('p','step-body',s.description));const entries=Object.entries(s.settings||{}).filter(([k,v])=>v!==''&&v!==null&&v!==undefined);if(entries.length){const specs=E('div','specs');specs.append(E('p','specs-label','SETTINGS'));entries.forEach(([k,v])=>{const row=E('div','spec-row');row.append(E('span','spec-key',k),E('span','spec-value',String(v)));specs.append(row)});step.append(specs)}const u=safe(s.guideUrl||guides[s.guideKey]||'');if(u){const a=E('a','guide-link','Basic Guide · '+(s.guideTitle||s.title||'View guide')+' ↗');a.href=u;a.target='_blank';a.rel='noopener noreferrer';step.append(a)}panel.append(step)});
+const backAction=E('button','flip-action');backAction.type='button';backAction.innerHTML='<span aria-hidden="true">←</span> BACK';back.prepend(backAction);[details,backAction].forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();stopVideo();card.classList.toggle('flipped')}));card.addEventListener('click',e=>{if(!card.classList.contains('active')||e.target.closest('button,a,iframe'))return;stopVideo();card.classList.toggle('flipped')});inner.append(front,back);card.append(inner);return card}
+function showRecipe(item){panel.replaceChildren();const close=E('button','recipe-close','×');close.setAttribute('aria-label','Close recipe');close.addEventListener('click',()=>{panel.hidden=true;document.getElementById('showcase').scrollIntoView({behavior:'smooth'})});panel.append(close);const head=E('div','recipe-head');head.append(E('h3','',item.title||'Recipe'),E('p','recipe-intro',item.recipeIntro||'Follow the steps and settings used to create this scene.'));panel.append(head);
+(item.steps||[]).forEach((s,i)=>{const step=E('section','step');step.style.setProperty('--step-index',i);step.append(E('h4','step-title',String(i+1).padStart(2,'0')+'. '+(s.title||'Step')));if(s.description)step.append(E('p','step-body',s.description));const entries=Object.entries(s.settings||{}).filter(([k,v])=>v!==''&&v!==null&&v!==undefined);if(entries.length){const specs=E('div','specs');specs.append(E('p','specs-label',s.example?'SETTINGS · EXAMPLE':'SETTINGS'));entries.forEach(([k,v])=>{const row=E('div','spec-row');row.append(E('span','spec-key',k),E('span','spec-value',String(v)));specs.append(row)});step.append(specs)}const u=safe(s.guideUrl||guides[s.guideKey]||'');if(u){const a=E('a','guide-link','Basic Guide · '+(s.guideTitle||s.title||'View guide')+' ↗');a.href=u;a.target='_blank';a.rel='noopener noreferrer';step.append(a)}else{const g=E('span','guide-link guide-pending','Basic Guide · '+(s.guideTitle||s.title||'View guide'));g.title='Official guide URL to be added';step.append(g)}panel.append(step)});
 if(!(item.steps||[]).length)panel.append(E('p','recipe-intro','Recipe steps will be added soon.'));panel.hidden=false;panel.scrollIntoView({behavior:'smooth',block:'start'})}
 function setPosition(card,pos){card.classList.remove('pos-left','pos-center','pos-right','pos-farleft','pos-farright','active');card.classList.add('pos-'+pos);if(pos==='center')card.classList.add('active')}
 function updateDots(){dots.replaceChildren();items.forEach((it,j)=>{const b=E('button','dot'+(j===current?' on':''));b.setAttribute('aria-label','Show '+(j+1));b.addEventListener('click',()=>{if(sliding)return;const diff=(j-current+items.length)%items.length;if(diff===0)return;if(diff===1)turn(1);else if(diff===items.length-1)turn(-1);else show(j)});dots.append(b)})}

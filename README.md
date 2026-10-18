@@ -4,7 +4,7 @@ GitHub Pages: upload `index.html`, `showcases.js`, and `nin-logo-white.png` to t
 
 ## Content editing
 
-Edit `showcases.js` only. Each Showcase includes videoUrl, title, description, tags, creator, `location: {name, url}`, up to two `objects: [{name, url}]`, and `steps`.
+Edit `showcases.js` only. Each Showcase includes `videoUrl`, video `aspect` (`16:9` or `9:16`), `title`, optional `link`, short `description`, `creator`, `location: {name, url}`, up to two `objects: [{name, url}]`, tags, and Recipe `steps`.
 
 Each Recipe step accepts `title`, `description`, `settings: {key: value}`, and `guideKey` (lookup in `NIN_BASIC_GUIDES`) or `guideUrl` (step-specific override). `guideTitle` controls the guide link label. Steps are shown in order with settings and the corresponding Basic Guide **immediately below that step**.
 
@@ -19,3 +19,5 @@ Compact 2:3 catalog cards; improved reverse-side spacing and separators.
 v0.0.0: smooth catalog slide, flip stagger, animated buttons, recipe entrance, reduced-motion support.
 
 Final catalog: 2:3 cards, centered focus, blurred adjacent previews, infinite smooth transitions, dot controls, clickable object chips, Guide Information, six official links, compact footer contacts.
+
+Recipe for A Whale Above Seokchon Lake follows the four user-approved steps. Motion values are labeled EXAMPLE and not asserted as actual footage settings. Guide URLs remain editable in showcases.js.
