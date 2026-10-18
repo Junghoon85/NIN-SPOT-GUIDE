@@ -1,4 +1,4 @@
-# NIN SPOT GUIDE v0.4.1
+# NIN SPOT GUIDE v0.4.2
 
 GitHub Pages: upload `index.html`, `showcases.js`, and `nin-logo-white.png` to the same folder.
 
@@ -13,3 +13,4 @@ Fill real specifications from the actual production settings. Blank setting valu
 Location names link to the URL you supply. Each object renders as an individually linked hashtag when its URL is supplied. Maximum 2 objects per Showcase.
 
 YouTube preview images and embeds require internet. Official social icons use jsDelivr Simple Icons.
+\nCatalog-style smooth horizontal card transitions.\n
