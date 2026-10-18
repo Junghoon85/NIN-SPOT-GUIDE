@@ -1,6 +1,6 @@
 /* NIN SPOT GUIDE v0.0.0 — Edit this file to manage Showcase cards.
    Unknown values are deliberately left blank. Do not publish example settings as actual footage specifications.
-   Editable fields: videoUrl, aspect, title, link, description, creator, location, objects (up to 2) and Recipe steps.
+   Editable fields: videoUrl, aspect, title, link, description, creator, difficulty (Easy, Moderate, Hard), location, objects (up to 2) and Recipe steps.
    Location and objects each keep their display name and URL together. Each Recipe step has its own settings and Basic Guide.
 */
 window.NIN_SHOWCASES = [
@@ -9,6 +9,7 @@ window.NIN_SHOWCASES = [
     aspect: '16:9',
     link: '',
     title: 'World Cup on NIN.Earth',
+    difficulty: 'Moderate',
     description: 'A football-inspired experience brought into the real world.',
     tags: ['3DObject', 'AR'], creator: 'NIN.Earth',
     location: {name:'Monterrey Stadium (Estadio BBVA) · Av. Pablo Livas 2011, La Pastora, 67140 Guadalupe, Nuevo León, Mexico',url:'https://www.google.com/maps/search/?api=1&query=Estadio+BBVA+Av.+Pablo+Livas+2011+Guadalupe+Nuevo+Leon+Mexico'},
@@ -24,6 +25,7 @@ window.NIN_SHOWCASES = [
     aspect: '9:16',
     link: '',
     title: 'A Whale Balloon by the Sea',
+    difficulty: 'Easy',
     description: 'A playful seaside moment with a giant whale balloon in AR.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'',url:''},
@@ -39,6 +41,7 @@ window.NIN_SHOWCASES = [
     aspect: '16:9',
     link: '',
     title: 'A Whale Above Seokchon Lake',
+    difficulty: 'Hard',
     description: 'A humpback whale glides above Seokchon Lake in Seoul, blending a digital object with a real place.',
     tags: ['Tile','3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'Seokchon Lake, Seoul',url:'https://www.google.com/maps/search/?api=1&query=Seokchon+Lake+Seoul'},
@@ -55,6 +58,7 @@ window.NIN_SHOWCASES = [
     aspect: '9:16',
     link: '',
     title: 'BTS Returns to Gwanghwamun',
+    difficulty: 'Moderate',
     description: 'BTS and ARMY letter objects appear at Gwanghwamun Square in Seoul.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'Gwanghwamun Square, Seoul',url:'https://www.google.com/maps/search/?api=1&query=Gwanghwamun+Square+Seoul'},
