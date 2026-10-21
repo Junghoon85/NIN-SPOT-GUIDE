@@ -68,6 +68,22 @@ window.NIN_SHOWCASES = [
       {title:'Install the lettering',description:'Place the BTS and ARMY objects.',settings:{Objects:'BTS Letters, ARMY Letters',Scale:'',Altitude:''},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
       {title:'View in AR',description:'Experience the finished arrangement.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
     ]
+  },
+  {
+    videoUrl: 'https://youtube.com/shorts/Ej7OAKhgYdI?feature=share',
+    aspect: '9:16',
+    link: '',
+    title: '하늘공원에 억새축제 포스터를 띄워봤어요!',
+    difficulty: '',
+    description: '하늘공원에 억새축제 포스터를 Picture 오브젝트로 배치한 AR 쇼케이스입니다.',
+    tags: ['AR'], creator: 'NIN.Earth',
+    location: {name:'하늘공원, 서울',url:'https://www.google.com/maps/search/?api=1&query=Haneul+Park+Seoul'},
+    objects: [{name:'Picture',url:''},{name:'',url:''}],
+    steps: [
+      {title:'장소 선택',description:'서울 하늘공원을 선택합니다.',settings:{Location:'하늘공원, 서울'},guideKey:'Tile',guideTitle:'Select a Tile'},
+      {title:'Picture 오브젝트 설치',description:'억새축제 포스터를 장소에 배치합니다.',settings:{Object:'Picture'},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
+      {title:'AR로 확인',description:'완성된 포스터를 현장에서 확인합니다.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
+    ]
   }
 ];
 /* Paste official Basic Guide URLs here; each step may override guideUrl directly. */
