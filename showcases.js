@@ -81,9 +81,8 @@ window.NIN_SHOWCASES = [
     location: {name:'하늘공원, 서울',url:'https://www.google.com/maps/search/?api=1&query=Haneul+Park+Seoul'},
     contentUsed: [{type:'picture',name:'Picture',url:''}],
     steps: [
-      {title:'장소 선택',description:'서울 하늘공원을 선택합니다.',settings:{Location:'하늘공원, 서울'},guideKey:'Tile',guideTitle:'Select a Tile'},
-      {title:'Picture 오브젝트 설치',description:'억새축제 포스터를 장소에 배치합니다.',settings:{Object:'Picture'},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
-      {title:'AR로 확인',description:'완성된 포스터를 현장에서 확인합니다.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
+      {title:'원하는 곳에 원하는 이미지를 올립니다.',description:'',settings:{},guideUrl:'https://youtube.com/shorts/bOrCMQ9Jdcs',guideTitle:'이미지 올리기'},
+      {title:'AR로 확인합니다.',description:'',settings:{},guideKey:'AR',guideTitle:'AR로 확인하기'}
     ]
   }
 ];
