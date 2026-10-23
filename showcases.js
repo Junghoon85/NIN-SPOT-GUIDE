@@ -80,9 +80,11 @@ window.NIN_SHOWCASES = [
     tags: ['AR'], creator: 'NIN.Earth',
     location: {name:'하늘공원, 서울',url:'https://www.google.com/maps/search/?api=1&query=Haneul+Park+Seoul'},
     contentUsed: [{type:'picture',name:'Picture',url:''}],
+    recipeIntro: '이 장면을 만든 단계와 설정을 따라 해보세요.',
     steps: [
-      {title:'원하는 곳에 원하는 이미지를 올립니다.',description:'',settings:{},guideUrl:'https://youtube.com/shorts/bOrCMQ9Jdcs',guideTitle:'이미지 올리기'},
-      {title:'AR로 확인합니다.',description:'',settings:{},guideKey:'AR',guideTitle:'AR로 확인하기'}
+      {title:'원하는 위치에 이미지를 배치합니다.',description:'',settings:{},guideUrl:'https://youtube.com/shorts/bOrCMQ9Jdcs',guideTitle:'이미지 올리기'},
+      {title:'이미지를 복제하여 반복 배치합니다.',description:'',settings:{},guideTitle:'반복 세우기'},
+      {title:'AR / 3D로 완성된 장면을 체험합니다.',description:'',settings:{},guideTitle:'AR/3D로 체험하기'}
     ]
   }
 ];
