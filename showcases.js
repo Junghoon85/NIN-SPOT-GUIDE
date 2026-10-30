@@ -44,7 +44,7 @@ window.NIN_SHOWCASES = [
     aspect: '9:16',
     link: '',
     title: 'Halloween Takes Over the Street',
-    difficulty: '',
+    difficulty: 'Hard',
     description: 'Halloween objects take over the street in AR.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'the street',url:''},
