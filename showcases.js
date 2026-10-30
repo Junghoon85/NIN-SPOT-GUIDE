@@ -1,7 +1,7 @@
 /* NIN SPOT GUIDE v0.0.0 — Edit this file to manage Showcase cards.
    Unknown values are deliberately left blank. Do not publish example settings as actual footage specifications.
    Editable fields: videoUrl, aspect, title, link, description, creator, difficulty (Easy, Moderate, Hard), location, contentUsed and Recipe steps.
-   contentUsed entries use {type:'text|picture|drawing|object|video', name:'', url:''}. Only Object entries use a Store URL (up to 2 objects).
+   contentUsed entries use {type:'text|picture|drawing|object|video', name:'', url:''}. Only Object entries use a Store URL.
    Each Recipe step has its own settings and Basic Guide.
 */
 window.NIN_SHOWCASES = [
@@ -14,11 +14,13 @@ window.NIN_SHOWCASES = [
     description: 'A football-inspired experience brought into the real world.',
     tags: ['3DObject', 'AR'], creator: 'NIN.Earth',
     location: {name:'Monterrey Stadium (Estadio BBVA) · Av. Pablo Livas 2011, La Pastora, 67140 Guadalupe, Nuevo León, Mexico',url:'https://www.google.com/maps/search/?api=1&query=Estadio+BBVA+Av.+Pablo+Livas+2011+Guadalupe+Nuevo+Leon+Mexico'},
-    contentUsed: [{type:'object',name:'Humpback Whale',url:''}],
+    contentUsed: [{type:'picture',name:'Picture',url:''},{type:'object',name:'humpback',url:''}],
     steps: [
-      {title:'Prepare the scene',description:'Choose the location and prepare the content.',settings:{},guideKey:'Tile',guideTitle:'Select a Tile'},
-      {title:'Install the humpback whale',description:'Place the humpback whale in the stadium scene.',settings:{Object:'Humpback Whale'},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
-      {title:'View in AR',description:'Experience the result through your phone.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
+      {title:'Choose a location',description:'Choose the stadium location.',settings:{},guideKey:'Search',guideTitle:'Search'},
+      {title:'Install an image',description:'Place the image in the scene.',settings:{},guideKey:'Image',guideTitle:'Image'},
+      {title:'Install an object',description:'Place the humpback object in the scene.',settings:{Object:'humpback'},guideKey:'Object',guideTitle:'Object'},
+      {title:'Install a subobject',description:'Set a message that moves together with the object.',settings:{},guideTitle:'Install Subobject'},
+      {title:'Capture in AR',description:'View and record the finished scene.',settings:{},guide:false}
     ]
   },
   {
@@ -30,28 +32,28 @@ window.NIN_SHOWCASES = [
     description: 'A playful seaside moment with a giant whale balloon in AR.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'',url:''},
-    contentUsed: [{type:'object',name:'Whale Balloon',url:''}],
+    contentUsed: [{type:'object',name:'humpback',url:''}],
     steps: [
-      {title:'Choose a location',description:'Prepare the seaside scene.',settings:{},guideKey:'Tile',guideTitle:'Select a Tile'},
-      {title:'Position the whale balloon',description:'Align the object with the camera composition.',settings:{Scale:'',Altitude:'',Rotation:''},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
-      {title:'Capture in AR',description:'View and record the finished scene.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
+      {title:'Choose a location',description:'Prepare the seaside scene.',settings:{},guide:false},
+      {title:'Install the humpback object',description:'Place the humpback object in the seaside scene.',settings:{Object:'humpback'},guideKey:'Object',guideTitle:'Object'},
+      {title:'Capture in AR',description:'View and record the finished scene.',settings:{},guide:false}
     ]
   },
   {
-    videoUrl: 'https://youtu.be/Z90LKF64kKM?si=8QDTZOVZFXXsPYjG',
-    aspect: '16:9',
+    videoUrl: 'https://youtube.com/shorts/mxSmk1k0eQ4?si=QFhp9rTffGPsnen0',
+    aspect: '9:16',
     link: '',
-    title: 'A Whale Above Seokchon Lake',
-    difficulty: 'Hard',
-    description: 'A humpback whale glides above Seokchon Lake in Seoul, blending a digital object with a real place.',
-    tags: ['Tile','3DObject','AR'], creator: 'NIN.Earth',
-    location: {name:'Seokchon Lake, Seoul',url:'https://www.google.com/maps/search/?api=1&query=Seokchon+Lake+Seoul'},
-    contentUsed: [{type:'object',name:'Humpback Whale',url:''}],
+    title: 'Halloween Takes Over the Street',
+    difficulty: '',
+    description: 'Halloween objects take over the street in AR.',
+    tags: ['3DObject','AR'], creator: 'NIN.Earth',
+    location: {name:'the street',url:''},
+    contentUsed: [{type:'object',name:'halloween_pumpkin',url:''},{type:'object',name:'Halloween ghost',url:''},{type:'object',name:'halloween_witch hat',url:''}],
     steps: [
-      {title:'Select a Tile',description:'Select a Tile near Seokchon Lake.',settings:{Location:'Seokchon Lake, Seoul'},guideKey:'Tile',guideTitle:'How to Purchase Tiles'},
-      {title:'Install a 3D Object',description:'Place a humpback whale above the lake.',settings:{Object:'Humpback Whale',Scale:'To be specified',Altitude:'To be specified'},guideKey:'3DObject',guideTitle:'How to Install 3D Objects'},
-      {title:'Set the Motion',description:'Make the whale move through the sky.',example:true,settings:{Speed:'3',Path:'Curved',Orientation:'Follow Path',Playback:'Repeat'},guideKey:'Motion',guideTitle:'How to Set Motion'},
-      {title:'View in AR',description:'Visit the location and experience the result.',settings:{},guideKey:'AR',guideTitle:'How to View in AR'}
+      {title:'Choose a location',description:'Choose a street location.',settings:{Location:'the street'},guide:false},
+      {title:'Install the Halloween objects',description:'Place halloween_pumpkin, Halloween ghost, and halloween_witch hat in the scene.',settings:{Objects:'halloween_pumpkin, Halloween ghost, halloween_witch hat'},guideKey:'Object',guideTitle:'Object'},
+      {title:'Repeat the pumpkins',description:'Duplicate halloween_pumpkin and place it repeatedly.',settings:{Object:'halloween_pumpkin'},guideTitle:'반복 세우기'},
+      {title:'Capture in AR',description:'View and record the finished scene.',settings:{},guide:false}
     ]
   },
   {
@@ -60,14 +62,14 @@ window.NIN_SHOWCASES = [
     link: '',
     title: 'BTS Returns to Gwanghwamun',
     difficulty: 'Moderate',
-    description: 'BTS and ARMY letter objects appear at Gwanghwamun Square in Seoul.',
+    description: 'A humpback object appears at Gwanghwamun Square in Seoul.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'Gwanghwamun Square, Seoul',url:'https://www.google.com/maps/search/?api=1&query=Gwanghwamun+Square+Seoul'},
-    contentUsed: [{type:'object',name:'BTS Letters',url:''},{type:'object',name:'ARMY Letters',url:''}],
+    contentUsed: [{type:'object',name:'humpback',url:''}],
     steps: [
-      {title:'Select a location',description:'Choose positions across Gwanghwamun Square.',settings:{Location:'Gwanghwamun Square, Seoul'},guideKey:'Tile',guideTitle:'Select a Tile'},
-      {title:'Install the lettering',description:'Place the BTS and ARMY objects.',settings:{Objects:'BTS Letters, ARMY Letters',Scale:'',Altitude:''},guideKey:'3DObject',guideTitle:'Install 3D Objects'},
-      {title:'View in AR',description:'Experience the finished arrangement.',settings:{},guideKey:'AR',guideTitle:'View in AR'}
+      {title:'Choose a location',description:'Choose positions across Gwanghwamun Square.',settings:{Location:'Gwanghwamun Square, Seoul'},guide:false},
+      {title:'Install the humpback object',description:'Place the humpback object in the scene.',settings:{Object:'humpback'},guideKey:'Object',guideTitle:'Object'},
+      {title:'Capture in AR',description:'View and record the finished scene.',settings:{},guide:false}
     ]
   },
   {
@@ -82,7 +84,7 @@ window.NIN_SHOWCASES = [
     contentUsed: [{type:'picture',name:'Picture',url:''}],
     recipeIntro: '이 장면을 만든 단계와 설정을 따라 해보세요.',
     steps: [
-      {title:'원하는 위치에 이미지를 배치합니다.',description:'',settings:{},guideUrl:'https://youtube.com/shorts/bOrCMQ9Jdcs',guideTitle:'이미지 올리기'},
+      {title:'원하는 위치에 이미지를 배치합니다.',description:'',settings:{},guideKey:'Image',guideTitle:'이미지 올리기'},
       {title:'이미지를 복제하여 반복 배치합니다.',description:'',settings:{},guideTitle:'반복 세우기'},
       {title:'AR / 3D로 완성된 장면을 체험합니다.',description:'',settings:{},guideTitle:'AR/3D로 체험하기'}
     ]
@@ -90,5 +92,11 @@ window.NIN_SHOWCASES = [
 ];
 /* Paste official Basic Guide URLs here; each step may override guideUrl directly. */
 window.NIN_BASIC_GUIDES = {
+  Search:'https://youtu.be/7-3mghilrQI?si=U0XAM9r_4bvuMBdZ',
+  Text:'https://youtu.be/stc-mUGexIk?si=9Bmy4TF2scDdnICR',
+  Object:'https://youtu.be/zqifQrF4f28?si=qcVxWnI7e_DIG6uq',
+  Image:'https://youtu.be/bOrCMQ9Jdcs?si=bmSpkl4X4slIXkN-',
+  Drawing:'https://youtu.be/arKtYlJnaB4?si=BpHEMexzAMYJlbDE',
+  Video:'https://youtu.be/W27RO2XbHGk?si=qXemP10DIxjeIlND',
   Tile:'', '3DObject':'', Motion:'', AR:'', VR:'', '3D':''
 };
