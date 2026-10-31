@@ -1,7 +1,7 @@
 /* NIN SPOT GUIDE v0.0.0 — Edit this file to manage Showcase cards.
    Unknown values are deliberately left blank. Do not publish example settings as actual footage specifications.
    Editable fields: videoUrl, aspect, title, link, description, creator, difficulty (Easy, Moderate, Hard), location, contentUsed and Recipe steps.
-   contentUsed entries use {type:'text|picture|drawing|object|video', name:'', url:''}. Only Object entries use a Store URL.
+   contentUsed entries use {type:'text|picture|drawing|object|video', name:'', url:'', image:''}. Object entries use the Object Store URL as both link and image when image is omitted.
    Each Recipe step has its own settings and Basic Guide.
 */
 window.NIN_SHOWCASES = [
@@ -14,7 +14,7 @@ window.NIN_SHOWCASES = [
     description: 'A football-inspired experience brought into the real world.',
     tags: ['3DObject', 'AR'], creator: 'NIN.Earth',
     location: {name:'Monterrey Stadium (Estadio BBVA) · Av. Pablo Livas 2011, La Pastora, 67140 Guadalupe, Nuevo León, Mexico',url:'https://www.google.com/maps/search/?api=1&query=Estadio+BBVA+Av.+Pablo+Livas+2011+Guadalupe+Nuevo+Leon+Mexico'},
-    contentUsed: [{type:'picture',name:'Picture',url:''},{type:'object',name:'humpback',url:''}],
+    contentUsed: [{type:'picture',name:'Picture',url:''},{type:'object',name:'HUMPBACK',url:'https://assets.arad.at/a/ast_01m62hwe0spts6gs3c62j39bcf'}],
     steps: [
       {title:'Choose a location',description:'Choose the stadium location.',settings:{},guideKey:'Search',guideTitle:'Search'},
       {title:'Install an image',description:'Place the image in the scene.',settings:{},guideKey:'Image',guideTitle:'Image'},
@@ -32,7 +32,7 @@ window.NIN_SHOWCASES = [
     description: 'A playful seaside moment with a giant whale balloon in AR.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'',url:''},
-    contentUsed: [{type:'object',name:'humpback',url:''}],
+    contentUsed: [{type:'object',name:'HUMPBACK',url:'https://assets.arad.at/a/ast_01m62hwe0spts6gs3c62j39bcf'}],
     steps: [
       {title:'Choose a location',description:'Prepare the seaside scene.',settings:{},guide:false},
       {title:'Install the humpback object',description:'Place the humpback object in the seaside scene.',settings:{Object:'humpback'},guideKey:'Object',guideTitle:'Object'},
@@ -48,7 +48,11 @@ window.NIN_SHOWCASES = [
     description: 'Halloween objects take over the street in AR.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'the street',url:''},
-    contentUsed: [{type:'object',name:'halloween_pumpkin',url:''},{type:'object',name:'Halloween ghost',url:''},{type:'object',name:'halloween_witch hat',url:''}],
+    contentUsed: [
+      {type:'object',name:'halloween_pumpkin',url:'https://assets.arad.at/a/ast_01m5sxtapth46axezjpmbxnx9b'},
+      {type:'object',name:'Halloween ghost',url:'https://assets.arad.at/a/ast_01m5sck7x9qvm76p9zdx7x1h3z'},
+      {type:'object',name:'halloween_witch hat',url:'https://assets.arad.at/a/ast_01m5sg191d65246161p4ksj3af'}
+    ],
     steps: [
       {title:'Choose a location',description:'Choose a street location.',settings:{Location:'the street'},guide:false},
       {title:'Install the Halloween objects',description:'Place halloween_pumpkin, Halloween ghost, and halloween_witch hat in the scene.',settings:{Objects:'halloween_pumpkin, Halloween ghost, halloween_witch hat'},guideKey:'Object',guideTitle:'Object'},
@@ -65,7 +69,7 @@ window.NIN_SHOWCASES = [
     description: 'A humpback object appears at Gwanghwamun Square in Seoul.',
     tags: ['3DObject','AR'], creator: 'NIN.Earth',
     location: {name:'Gwanghwamun Square, Seoul',url:'https://www.google.com/maps/search/?api=1&query=Gwanghwamun+Square+Seoul'},
-    contentUsed: [{type:'object',name:'humpback',url:''}],
+    contentUsed: [{type:'object',name:'HUMPBACK',url:'https://assets.arad.at/a/ast_01m62hwe0spts6gs3c62j39bcf'}],
     steps: [
       {title:'Choose a location',description:'Choose positions across Gwanghwamun Square.',settings:{Location:'Gwanghwamun Square, Seoul'},guide:false},
       {title:'Install the humpback object',description:'Place the humpback object in the scene.',settings:{Object:'humpback'},guideKey:'Object',guideTitle:'Object'},
